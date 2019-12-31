@@ -8,6 +8,10 @@
 * Dynamic Programming : 문제를 여러 개의 하위 문제로 나누어 해결하고, 하위 문제들의 해결 방법들을 결합하여 최종 문제를 해결하는 문제 해결 방식이다.
 
 <Level_01_Q15 문자열 내 마음대로 정렬하기>
-Kotlin에서는 String에서 인덱스를 이용해 Char처럼 이용이 가능하다.
+* Kotlin에서는 String에서 인덱스를 이용해 Char처럼 이용이 가능하다.
 val str : String = "ABCD"
-plintln(str[0]) //결과 : "A"
+println(str[0]) //결과 : "A"
+* String의 대소비교가 가능하다
+val str01 : String = "abce"
+val str02 : String = "abcd"
+if (str01 > str02) println(str01) else println(str02) //결과 : "abce"
