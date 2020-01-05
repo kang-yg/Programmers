@@ -26,3 +26,19 @@ if (str01 > str02) println(str01) else println(str02) //결과 : "abce"
 * 최대공약수(GCD) : java.math.BigInteger의 gcd()메소드를 이용  
 val gcdNum : Int = n.toBigInteger().gcd(m.toBigInteger()).toInt()  
 * 최소공배수(LCM) : val lcdNum : Int = (n * m) / gcdNum  
+  
+<Level_01_Q29 : 행렬의 덧셈>  
+* 배열  
+ⓐ 1차원 배열  
+ ① var arr : Array<Int> = arrayOf() //empty배열  
+ ※ arr += 5 //arr에 5를 추가  
+ ② val arr : Array<Int> = Array<Int>(배열의 크기, {배열을 채울 람다식}) //!empty배열  
+ ※EX.  
+ var arr : Array<Int> = Array<Int>(3, {i -> 0}) //{0, 0, 0}  
+ⓑ 다차원 배열  
+ ① var arr: Array<IntArray> = arrayOf()  
+ ※ arr += intArrayOf(1,2,3)  //{{1,2,3}}  
+    arr += intArrayOf(4,5,6)  //{{1,2,3},{4,5,6}} 
+ ② val arr : Array<IntArray> = Array<IntArray>(배열의 크기, {IntArray(배열의 크기, 배열을 채울 람다식)})  
+ ※EX.  
+ var arr : Array<IntArray> = Array<IntArray>(3, { IntArray(5, init = { i -> i + 1 }) }) //{{1,2,3,4,5}, {1,2,3,4,5}, {1,2,3,4,5}}  
