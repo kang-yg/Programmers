@@ -42,3 +42,5 @@ val gcdNum : Int = n.toBigInteger().gcd(m.toBigInteger()).toInt()
  ② val arr : Array<IntArray> = Array<IntArray>(배열의 크기, {IntArray(배열의 크기, 배열을 채울 람다식)})  
  ※EX.  
  var arr : Array<IntArray> = Array<IntArray>(3, { IntArray(5, init = { i -> i + 1 }) }) //{{1,2,3,4,5}, {1,2,3,4,5}, {1,2,3,4,5}}  
+   
+<Level_02_Q03 : 기능개발> - ★미해결★  
