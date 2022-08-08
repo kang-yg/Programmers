@@ -6,7 +6,7 @@ fun main(args: Array<String>) {
 
 class TruckCrossingTheBridge {
     fun solution(bridge_length: Int, weight: Int, truck_weights: IntArray): Int {
-        var answer = 0
+        var answer = -1
         return answer
     }
 }
